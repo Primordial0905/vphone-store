@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Result - V-Phone</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">V-Phone</a></h1>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links nav-left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="promotion.html">Promotions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <ul class="nav-links nav-right">
+                    <li><a href="register.html" class="btn-register">Register</a></li>
+                    <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i><span id="cart-count" class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="container">
+                <h1>Payment Result</h1>
+                <p>Thank you for shopping with V-Phone</p>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <div class="container">
+                <div class="result-card" id="result-card">
+                    <i id="result-icon" class="fas fa-circle-notch"></i>
+                    <h2 id="result-title">Checking your payment...</h2>
+                    <p id="result-message"></p>
+                    <p class="result-order">
+                        Order ID: <strong id="result-order">-</strong><br>
+                        Amount: <strong id="result-amount">-</strong>
+                    </p>
+                    <div class="result-actions">
+                        <button class="btn btn-outline" id="result-refresh" style="display:none">Check again</button>
+                        <a href="products.html" class="btn">Back to Products</a>
+                        <a href="index.html" class="btn btn-outline">Home</a>
+                    </div>
+                    <p class="result-note">This is a sandbox simulation. No real money was charged.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 V-Phone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/payment-result.js"></script>
+</body>
+</html>

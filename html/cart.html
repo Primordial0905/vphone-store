@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - V-Phone</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">V-Phone</a></h1>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links nav-left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="promotion.html">Promotions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <ul class="nav-links nav-right">
+                    <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i><span id="cart-count" class="cart-count">0</span></a></li>
+                    <li><a href="register.html" class="btn-register">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="container">
+                <h1>Your Cart</h1>
+                <p>Review your items before checkout</p>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <div class="container">
+                <p id="cart-loading" class="cart-status">Loading your cart...</p>
+
+                <div id="cart-empty" class="cart-empty" style="display:none">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Your cart is empty</h2>
+                    <p>Pick a phone and it will show up here.</p>
+                    <a href="products.html" class="btn">Browse Phones</a>
+                </div>
+
+                <div id="cart-content" style="display:none">
+                    <div id="cart-items" class="cart-items"></div>
+
+                    <div class="cart-summary">
+                        <span>Total</span>
+                        <strong id="cart-total">Rp 0</strong>
+                    </div>
+
+                    <div class="cart-actions">
+                        <a href="products.html" class="btn btn-outline">Continue Shopping</a>
+                        <button class="btn btn-large" id="checkout-btn">Checkout</button>
+                    </div>
+                    <p class="result-note" style="text-align:center">This is a sandbox simulation. No real money is charged.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 V-Phone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

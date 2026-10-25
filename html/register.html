@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - V-Phone</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">V-Phone</a></h1>
+            </div>
+            <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links nav-left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="promotion.html">Promotions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <ul class="nav-links nav-right">
+                    <li><a href="register.html" class="btn-register active">Register</a></li>
+                    <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i><span id="cart-count" class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- contents -->
+    <main>
+        <section class="page-banner">
+            <div class="container">
+                <h1>Create an Account</h1>
+                <p>Join the V-Phone community and enjoy exclusive benefits</p>
+            </div>
+        </section>
+
+        <section class="register-section">
+            <div class="container">
+                <div class="register-container">
+                    <div class="register-form-container">
+                        <h2>Register Now</h2>
+                        <form id="registerForm" class="register-form">
+                            <!-- name -->
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required" >*</span></label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                                <span class="error-message" id="fullNameError"></span>
+                            </div>
+                            
+                            <!-- gender -->
+                            <div class="form-group">
+                                <label>Gender <span class="required">*</span></label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="other" name="gender" value="other">
+                                        <label for="other">Other</label>
+                                    </div>
+                                </div>
+                                <span class="error-message" id="genderError"></span>
+                            </div>
+                            
+                            <!-- email -->
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="text" id="email" name="email" placeholder="Enter your email address">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <!-- password -->
+                            <div class="form-group">
+                                <label for="password">Password <span class="required">*</span></label>
+                                <div class="password-input">
+                                    <input type="password" id="password" name="password" placeholder="Create a password">
+                                    <i class="fas fa-eye-slash toggle-password" data-target="password"></i>
+                                </div>
+                                <div class="password-strength">
+                                    <div class="strength-meter">
+                                        <div class="strength-bar" id="strengthBar"></div>
+                                    </div>
+                                    <span class="strength-text" id="strengthText">Password strength</span>
+                                </div>
+                                <span class="error-message" id="passwordError"></span>
+                            </div>
+                            
+                            <!-- confirm password -->
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                                <div class="password-input">
+                                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                                    <i class="fas fa-eye-slash toggle-password" data-target="confirmPassword"></i>
+                                </div>
+                                <span class="error-message" id="confirmPasswordError"></span>
+                            </div>
+                            
+                            <!-- terms n conditions -->
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                                <span class="error-message" id="termsError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-large">Create Account</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- foot -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>V-Phone</h2>
+                    <p>Premium smartphones for every need</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@vphone.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 V-Phone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/validation.js"></script>
+</body>
+</html>
